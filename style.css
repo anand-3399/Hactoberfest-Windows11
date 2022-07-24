@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-image: url("img/bg.jpeg"); */
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+
+}
+
+.taskbar {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #f3f3f3;
+    z-index: 110;
+    align-items: center;
+    height: 50px;
+}
+
+.taskbar img {
+    width: 30px;
+    height: 28px;
+    padding: 6px;
+}
+
+.taskbar img:hover {
+    transition: all 0.3s ease-in;
+    background-color: #d1d1d1;
+    border-radius: 8px;
+}
+
+.taskbar img:active {
+    background-color: #b8b8b8;
+    width: 27px;
+    height: 24px;
+}
+
+.rightTaskbar {
+    position: absolute;
+    right: 30px;
+    margin: 6px 0;
+    height: 85%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.time{
+
+}
+.startmenu {
+    position: absolute;
+    /* bottom: 50px; */
+    bottom: -655px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s ease-in;
+}
+
+.startmenu img {
+    border-radius: 10px;
+    width: 37%;
+}
+
+.icons img {
+    width: 74px;
+}
+
+.icons {
+    width: 8%;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.searchmenu {
+    position: absolute;
+    /* bottom: 50px; */
+    bottom: -655px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s ease-in;
+}
+
+
+.searchmenu img {
+    border-radius: 10px;
+    width: 40%;
+}
+
+.action-center-button:hover{
+    transition: all 0.3s ease-in;
+    background-color: #d1d1d1;
+    border-radius: 8px;
+}
+
+.action-center-button:active{
+    background-color: #b8b8b8;
+    border-radius: 8px;
+}
+
+/* Setting Timings */
+
+#timedate {
+    /* font: small-caps lighter 43px/150% "Segoe UI", Frutiger, "Frutiger Linotype",
+      "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    text-align: left;
+    width: 50%;
+    margin: 40px auto;
+    color: #fff;
+    border-left: 3px solid #ed1f24;*/
+    padding: 5px; 
+  }
+  
+/* End */
