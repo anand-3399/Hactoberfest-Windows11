@@ -37,8 +37,6 @@ body {
 
 .taskbar img:active {
     background-color: #b8b8b8;
-    /* width: 27px; */
-    /* height: 24px; */
     transform: scale(0.9, 0.9);
 }
 
@@ -64,15 +62,6 @@ body {
 
 /* START MENU BAR NOW */
 .startmenu {
-    /*
-    position: absolute;
-    bottom: 50px;
-    width: 100%;
-    text-align: center;
-    background-color: #b8b8b8;
-    width: 600px;
-    */
-
     bottom: -655px;
     transition: all 0.5s ease-in;
 
@@ -85,32 +74,10 @@ body {
     background-color: #f2f2f2;
     border: 2px solid #f2f2f2;
     margin-bottom: 4px;
-
-    /*
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-*/
     border-radius: 7px;
     transform: translateY(660px);
 
 }
-
-/*
-.startMenuPlace{
-    background-color: rebeccapurple;
-    width: 100%;
-    height: 86%;
-    position: absolute;
-    bottom: 0;
-
-}
-*/
-/* 
-.startmenu img {
-    border-radius: 10px;
-    width: 37%;
-} 
-*/
 
 /* ---------- */
 .SearchIcon {
@@ -122,9 +89,6 @@ body {
     opacity: 0.7;
     bottom: 0;
     width: 22px;
-
-    /* height: 100%;
-    width: 20px; */
 }
 
 .search {
@@ -153,6 +117,16 @@ body {
 .start-top-elements span {
     font-size: smaller;
     font-weight: 700;
+}
+
+.start figure:focus,
+.start-icons figure:active {
+    transform: scale(1.1);
+}
+
+.start-icons figure:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
 }
 
 .openAll {
@@ -239,19 +213,45 @@ figure {
 /* SEARCH MENU */
 
 .searchmenu {
-    position: absolute;
-    /* bottom: 50px; */
     bottom: -655px;
-    width: 100%;
-    text-align: center;
     transition: all 0.5s ease-in;
+
+    height: 500px;
+    width: 530.63px;
+    margin-left: calc(50% - 265.315px);
+    position: absolute;
+    bottom: 50px;
+    z-index: 90;
+    background-color: #f2f2f2;
+    border: 2px solid #f2f2f2;
+    margin-bottom: 4px;
+    border-radius: 7px;
+    transform: translateY(660px);
 }
 
+.search-top-elements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    margin: 15px 40px 0;
+}
 
+.search-top-elements span {
+    font-size: smaller;
+    /* font-weight: 700; */
+    padding: 0px 14px;
+}
+
+.moreSearch {
+    width: 11px;
+}
+
+/* 
 .searchmenu img {
     border-radius: 10px;
     width: 40%;
-}
+} */
 
 /* END */
 

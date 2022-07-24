@@ -7,8 +7,8 @@ Menu.addEventListener("click", () => {
     }
     else {
         startmenu.style.bottom = "50px"
-        searchmenu.style.bottom = "-655px"
         startmenu.style.transform = "translateX(0)"
+        searchmenu.style.bottom = "-655px"
 
     }
 })
@@ -23,6 +23,7 @@ SearchIcon.addEventListener("click", () => {
     }
     else {
         searchmenu.style.bottom = "50px"
+        searchmenu.style.transform = "translateX(0)"
         startmenu.style.bottom = "-655px"
     }
 
