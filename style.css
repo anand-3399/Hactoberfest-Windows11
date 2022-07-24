@@ -50,9 +50,8 @@ body {
     justify-content: flex-end;
 }
 
-.time{
+.time {}
 
-}
 .startmenu {
     position: absolute;
     /* bottom: 50px; */
@@ -93,13 +92,13 @@ body {
     width: 40%;
 }
 
-.action-center-button:hover{
+.action-center-button:hover {
     transition: all 0.3s ease-in;
     background-color: #d1d1d1;
     border-radius: 8px;
 }
 
-.action-center-button:active{
+.action-center-button:active {
     background-color: #b8b8b8;
     border-radius: 8px;
 }
@@ -114,7 +113,19 @@ body {
     margin: 40px auto;
     color: #fff;
     border-left: 3px solid #ed1f24;*/
-    padding: 5px; 
-  }
-  
+    padding: 5px;
+}
+
 /* End */
+/* Video */
+#myVideo {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    bottom: -121px;
+    min-width: 100%;
+    min-height: 100%;
+}
