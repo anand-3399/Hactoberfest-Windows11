@@ -80,30 +80,6 @@ body {
 }
 
 /* ---------- */
-.SearchIcon {
-    background: url(img/icons/search.svg) no-repeat;
-    content: "";
-    position: absolute;
-    left: 33px;
-    top: 33px;
-    opacity: 0.7;
-    bottom: 0;
-    width: 22px;
-}
-
-.search {
-    text-align: center;
-    padding: 27px 0px 0;
-}
-
-.SearchInput {
-    padding: 10px 0 10px 40px;
-    border: 0;
-    border-radius: 3px;
-    border-bottom: 2.5px solid #2184e2;
-    width: 450px;
-    outline: 0;
-}
 
 /* ---------- */
 .start-top-elements {
@@ -211,6 +187,31 @@ figure {
 
 /* END OF START MENU */
 /* SEARCH MENU */
+.SearchIcon {
+    background: url(img/icons/search.svg) no-repeat;
+    content: "";
+    position: absolute;
+    left: 33px;
+    top: 33px;
+    opacity: 0.7;
+    bottom: 0;
+    width: 22px;
+}
+
+.search {
+    text-align: center;
+    padding: 27px 0px 0;
+}
+
+.SearchInput {
+    padding: 10px 0 10px 40px;
+    border: 0;
+    border-radius: 3px;
+    border-bottom: 2.5px solid #2184e2;
+    width: 450px;
+    outline: 0;
+}
+
 
 .searchmenu {
     bottom: -655px;
@@ -247,11 +248,98 @@ figure {
     width: 11px;
 }
 
-/* 
-.searchmenu img {
-    border-radius: 10px;
-    width: 40%;
-} */
+.topApps span {
+    display: flex;
+    margin: 17px 33px 0;
+    font-weight: 700;
+}
+
+.pinned .Search-Apps-Icons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    justify-items: center;
+    padding: 10px 10px 0px 10px;
+    align-items: end;
+    grid-gap: 5px;
+}
+
+.Search-Apps-Icons img {
+    display: inline-block;
+    width: 35px;
+    /* cursor: pointer; */
+    margin: 4px;
+    padding: 3px;
+}
+
+
+.start figure:focus,
+.Search-Apps-Icons figure:active {
+    transform: scale(1.1);
+}
+
+#startEdge-SI,
+#startCalci-SI,
+#startWord-SI,
+#startSettings-SI,
+#startPowerPoint-SI {
+    background-color: white;
+    width: 91px;
+    height: 83px;
+    border-radius: 6px
+}
+
+#startEdge-SI:hover,
+#startCalci-SI:hover,
+#startWord-SI:hover,
+#startSettings-SI:hover,
+#startPowerPoint-SI:hover {
+    background-color: #dedede;
+}
+
+.Recent-Apps-Icons {
+    display: flex;
+    flex-direction: column;
+}
+
+.recentSearches span {
+
+    display: flex;
+    margin: 2px 33px 0;
+    font-weight: 700;
+}
+
+.Recent-Apps-Icons img {
+    display: inline-block;
+    width: 20px;
+    /* cursor: pointer; */
+    margin: 4px;
+    padding: 3px;
+}
+
+
+#clock-RI,
+#yourPhone-RI,
+#VSCode-RI,
+#startSettings-RI,
+#terminal-RI {
+    /* background-color: white; */
+    width: 106px;
+    height: 83px;
+    border-radius: 6px;
+    flex-direction: row;
+    height: 30px;
+    justify-content: flex-start;
+    margin: 6px 23px;
+}
+
+#clock-RI:hover,
+#yourPhone-RI:hover,
+#VSCode-RI:hover,
+#startSettings-RI:hover,
+#terminal-RI:hover {
+    background-color: #dedede;
+}
 
 /* END */
 
