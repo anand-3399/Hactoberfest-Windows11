@@ -1,7 +1,10 @@
 # Windows11
 
-`<video autoplay muted loop>`
+In this Project, I have made a prototype of Latest Windows11 with the help of HTML, CSS and JavaScript.
 
-<source src="image\README\Windows 11 GitHub.webm" type="video/webm">
+The Project is Published online at [Link](https://anand-3399.github.io/Windows11/)
 
-`</video>`
+
+```scheme
+[![Demo CountPages alpha](image\README\Windows 11.mp4)
+```
