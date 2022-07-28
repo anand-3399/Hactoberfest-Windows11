@@ -30,7 +30,7 @@ body {
 }
 
 .taskbar img:hover {
-    transition: all 0.3s ease-in;
+    transition: all 0.2s ease-in;
     background-color: #d1d1d1;
     border-radius: 8px;
 }
@@ -355,7 +355,7 @@ figure {
 /* END */
 
 .action-center-button:hover {
-    transition: all 0.3s ease-in;
+    transition: all 0.1s ease-in;
     background-color: #d1d1d1;
     border-radius: 8px;
 }
