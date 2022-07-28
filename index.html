@@ -13,7 +13,7 @@
 <body>
 
     <video autoplay muted loop id="myVideo">
-        <source src="img/video.webm" type="video/webm">
+        <!-- <source src="img/video.webm" type="video/webm"> -->
     </video>
 
     <div class="icons">
@@ -40,7 +40,7 @@
         <!-- <img src="img/icons-new.png" alt=""> -->
         <!-- <img class="rightTaskbar" src="img/taskbarright.png" alt=""> -->
         <div class="rightTaskbar">
-            <img src="img\icons\up.svg" alt="" onclick="Fullscreen()">
+            <img src="img\icons\up.svg" alt="" onclick="Fullscreen()" title="CLICK HERE FOR FULL SCREEN">
             <img src="img\icons\keyboard.svg" alt="">
 
             <div class="action-center-button" onclick="document.getElementById('acCheck').click()">
@@ -64,11 +64,10 @@
     </div>
     <div class="startMenuPlace">
         <div class="startmenu">
-            <!-- <img src="img/startmenu.png" alt=""> -->
             <div class="search">
                 <div class="SearchIcon"></div>
                 <input type="text" class="SearchInput" id="myInput" onkeyup="myFunction()"
-                    placeholder="Search for names.." title="Type in a name">
+                    placeholder="Search for names.." title="Search for your Favorite Application">
             </div>
             <div class="pinned">
 
@@ -174,11 +173,10 @@
     </div>
 
     <div class="searchmenu">
-        <!-- <img src="img\Searchbar-new.jpg" alt=""> -->
         <div class="search">
             <div class="SearchIcon"></div>
             <input type="text" class="SearchInput" id="myInput1" onkeyup="myFunction1()"
-                placeholder="Search for names.." title="Type in a name">
+                placeholder="Search for names.." title="Search for your Favorite Application">
         </div>
         <div class="pinned">
 

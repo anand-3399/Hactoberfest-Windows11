@@ -100,33 +100,29 @@ var elem = document.documentElement;
 
 /* When the openFullscreen() function is executed, open the video in fullscreen.
 Note that we must include prefixes for different browsers, as they don't support the requestFullscreen property yet */
-var FCount = false;
+
+
 function Fullscreen() {
-
-    if (FCount == false) {
-        FCount = true
-        if (elem.requestFullscreen) {
-            elem.requestFullscreen();
-        } else if (elem.webkitRequestFullscreen) { /* Safari */
-            elem.webkitRequestFullscreen();
-        } else if (elem.msRequestFullscreen) { /* IE11 */
-            elem.msRequestFullscreen();
-        }
-    }
-    else {
-        FCount = false
-        if (document.exitFullscreen) {
-            document.exitFullscreen();
-        } else if (document.webkitExitFullscreen) { /* Safari */
-            document.webkitExitFullscreen();
-        } else if (document.msExitFullscreen) { /* IE11 */
-            document.msExitFullscreen();
-        }
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
     }
 
-
-
+    if (document.exitFullscreen) {
+        document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) { /* Safari */
+        document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) { /* IE11 */
+        document.msExitFullscreen();
+    }
 }
+
+
+
+
 
 function myFunction() {
     var input, filter, ul, li, a, i, txtValue;
@@ -158,7 +154,7 @@ function myFunction1() {
             // li[i].style.display = "block";
             li[i].setAttribute('id', 'SearchedTemp')
             li[i].style.display = "";
-        } 
+        }
         else if ((i < 5) && (filter == "" || filter == " ")) {
             li[i].setAttribute('id', 'DefaultDisplaySearch');
             li[i].style.display = "block";
