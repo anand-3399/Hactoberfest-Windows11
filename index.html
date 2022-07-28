@@ -64,10 +64,11 @@
     </div>
     <div class="startMenuPlace">
         <div class="startmenu">
-            <!-- <img src="img/startmenu.png" alt=""> -->
+            <img src="img/startmenu.png" alt="">
             <div class="search">
                 <div class="SearchIcon"></div>
-                <input type="text" class="SearchInput">
+                <input type="text" class="SearchInput" id="myInput" onkeyup="myFunction()"
+                    placeholder="Search for names.." title="Type in a name">
             </div>
             <div class="pinned">
 
@@ -77,7 +78,7 @@
                             class="smallRight"></button>
                 </div>
 
-                <div class="start-icons">
+                <div class="start-icons" id="myUL">
 
                     <figure id="startWord">
                         <img src="img/icons/word.svg" alt="MS Word icon">
@@ -176,7 +177,8 @@
         <!-- <img src="img\Searchbar-new.jpg" alt=""> -->
         <div class="search">
             <div class="SearchIcon"></div>
-            <input type="text" class="SearchInput">
+            <input type="text" class="SearchInput" id="myInput1" onkeyup="myFunction1()"
+                placeholder="Search for names.." title="Type in a name">
         </div>
         <div class="pinned">
 
@@ -189,32 +191,84 @@
             </div>
             <div class="topApps">
                 <span>Top Apps</span>
-                <div class="Search-Apps-Icons">
-                    <figure id="startEdge-SI">
+                <div class="Search-Apps-Icons" id="myUL1">
+                    <figure id="DefaultDisplaySearch">
                         <img src="img/icons/edge.svg" alt="Windows 11 Edge icon">
                         <figcaption>Edge</figcaption>
                     </figure>
 
-                    <figure id="startCalci-SI">
+                    <figure id="DefaultDisplaySearch">
                         <img src="img/icons/calculator.svg" alt="Windows Calculator icon">
                         <figcaption>Calculator</figcaption>
                     </figure>
 
-                    <figure id="startWord-SI">
+                    <figure id="DefaultDisplaySearch">
                         <img src="img/icons/word.svg" alt="MS Word icon">
                         <figcaption>Word</figcaption>
                     </figure>
 
-                    <figure id="startSettings-SI" onclick="executeProgram('settings')">
+                    <figure id="DefaultDisplaySearch" onclick="executeProgram('settings')">
                         <img src="img/icons/settings.svg" alt="Windows 11 Settings icon">
                         <figcaption>Settings</figcaption>
                     </figure>
 
-                    <figure id="startPowerPoint-SI">
+                    <figure id="DefaultDisplaySearch">
                         <img src="img/icons/powerPoint.svg" alt="PowerPoint icon">
                         <figcaption>PowerPoint</figcaption>
                     </figure>
 
+                    <figure id="startExcel" onclick="executeProgram('excel')">
+                        <img src="img/icons/excel.svg" alt="MS Excel icon">
+                        <figcaption>Excel</figcaption>
+                    </figure>
+                    <figure id="startMail">
+                        <img src="img/icons/mail.svg" alt="Windows Mail icon">
+                        <figcaption>Mail</figcaption>
+                    </figure>
+                    <figure id="startStore">
+                        <img src="img/icons/store.png" alt="Windows 11 Microsoft Store icon">
+                        <figcaption>MS Store</figcaption>
+                    </figure>
+                    <figure id="startPhotos">
+                        <img src="img/icons/photos.svg" alt="Windows Photos icon">
+                        <figcaption>Photos</figcaption>
+                    </figure>
+                    <figure id="startCalendar">
+                        <img src="img/icons/calender.svg" alt="Windows Calender icon">
+                        <figcaption>Calender</figcaption>
+                    </figure>
+                    <figure id="startOneNote">
+                        <img src="img/icons/oneNote.svg" alt="OneNote icon">
+                        <figcaption>OneNote</figcaption>
+                    </figure>
+                    <figure id="startYourPhone">
+                        <img src="img/icons/yourPhone.svg" alt="Windows Your Phone icon">
+                        <figcaption>Your Phone</figcaption>
+                    </figure>
+                    <figure id="startClock">
+                        <img src="img/icons/clock.svg" alt="Windows Clock icon">
+                        <figcaption>Clock</figcaption>
+                    </figure>
+                    <figure id="startLinkedIn">
+                        <img src="img/icons/linkedIn.svg" alt="LinkedIn icon">
+                        <figcaption>LinkedIn</figcaption>
+                    </figure>
+                    <figure id="startToDo">
+                        <img src="img/icons/toDo.svg" alt="Microsoft To DO icon">
+                        <figcaption>To Do</figcaption>
+                    </figure>
+                    <figure id="startWhiteboard">
+                        <img src="img/icons/whiteboard.png" alt="Windows Whiteboard icon">
+                        <figcaption>Whiteboard</figcaption>
+                    </figure>
+                    <figure id="startSnip">
+                        <img src="img/icons/snipSketch.svg" alt="Windows Snipping Tool icon">
+                        <figcaption>Snipping Tool</figcaption>
+                    </figure>
+                    <figure id="startMovies">
+                        <img src="img/icons/movies.svg" alt="Windows Movies &amp; TV icon">
+                        <figcaption>Movies &amp; TV</figcaption>
+                    </figure>
                 </div>
             </div>
 

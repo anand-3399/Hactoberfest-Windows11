@@ -278,22 +278,33 @@ figure {
     transform: scale(1.1);
 }
 
-#startEdge-SI,
-#startCalci-SI,
-#startWord-SI,
-#startSettings-SI,
-#startPowerPoint-SI {
+.Search-Apps-Icons figure{
+    display: none;
+}
+
+#SearchedTemp{
+    display: block;
     background-color: white;
     width: 91px;
     height: 83px;
     border-radius: 6px
 }
 
-#startEdge-SI:hover,
-#startCalci-SI:hover,
-#startWord-SI:hover,
-#startSettings-SI:hover,
-#startPowerPoint-SI:hover {
+#SearchedTemp:hover{
+    background-color: #dedede;
+
+}
+
+#DefaultDisplaySearch
+{
+    display: block;
+    background-color: white;
+    width: 91px;
+    height: 83px;
+    border-radius: 6px
+}
+
+#DefaultDisplaySearch:hover{
     background-color: #dedede;
 }
 

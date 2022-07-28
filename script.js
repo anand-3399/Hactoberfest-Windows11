@@ -127,3 +127,47 @@ function Fullscreen() {
 
 
 }
+
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("figure");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("figcaption")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+function myFunction1() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput1");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL1");
+    li = ul.getElementsByTagName("figure");
+
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("figcaption")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1 && filter != "" && filter != " ") {
+            // li[i].style.display = "block";
+            li[i].setAttribute('id', 'SearchedTemp')
+            li[i].style.display = "";
+        } 
+        else if ((i < 5) && (filter == "" || filter == " ")) {
+            li[i].setAttribute('id', 'DefaultDisplaySearch');
+            li[i].style.display = "block";
+        }
+        else {
+            li[i].removeAttribute('id', 'SearchedTemp')
+            li[i].style.display = "none";
+
+        }
+    }
+
+}
