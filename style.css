@@ -8,7 +8,6 @@ body {
     background-size: cover;
     overflow: hidden;
     height: 100vh;
-
 }
 
 .taskbar {
@@ -278,11 +277,12 @@ figure {
     transform: scale(1.1);
 }
 
-.Search-Apps-Icons figure{
+.Search-Apps-Icons figure {
     display: none;
 }
 
-#SearchedTemp{
+#DefaultDisplaySearch,
+#SearchedTemp {
     display: block;
     background-color: white;
     width: 91px;
@@ -290,22 +290,10 @@ figure {
     border-radius: 6px
 }
 
-#SearchedTemp:hover{
+#DefaultDisplaySearch:hover,
+#SearchedTemp:hover {
     background-color: #dedede;
 
-}
-
-#DefaultDisplaySearch
-{
-    display: block;
-    background-color: white;
-    width: 91px;
-    height: 83px;
-    border-radius: 6px
-}
-
-#DefaultDisplaySearch:hover{
-    background-color: #dedede;
 }
 
 .Recent-Apps-Icons {
@@ -329,11 +317,7 @@ figure {
 }
 
 
-#clock-RI,
-#yourPhone-RI,
-#VSCode-RI,
-#startSettings-RI,
-#terminal-RI {
+#Recent-Searches {
     /* background-color: white; */
     width: 106px;
     height: 83px;
@@ -344,11 +328,7 @@ figure {
     margin: 6px 23px;
 }
 
-#clock-RI:hover,
-#yourPhone-RI:hover,
-#VSCode-RI:hover,
-#startSettings-RI:hover,
-#terminal-RI:hover {
+#Recent-Searches:hover {
     background-color: #dedede;
 }
 
@@ -365,19 +345,9 @@ figure {
     border-radius: 8px;
 }
 
-
-
-
 /* Setting Timings */
 
 #timedate {
-    /* font: small-caps lighter 43px/150% "Segoe UI", Frutiger, "Frutiger Linotype",
-      "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-    text-align: left;
-    width: 50%;
-    margin: 40px auto;
-    color: #fff;
-    border-left: 3px solid #ed1f24;*/
     padding: 5px;
 }
 
