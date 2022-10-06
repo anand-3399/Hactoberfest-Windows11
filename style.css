@@ -8,6 +8,27 @@ body {
     background-size: cover;
     overflow: hidden;
     height: 100vh;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+}
+
+.weather{
+    position: absolute;
+    left: 15px;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 15px;
+}
+.weather:hover {
+    transition: all 0.1s ease-in;
+    background-color: #d1d1d1;
+    border-radius: 8px;
+}
+.weather .info{
+    padding-top: 3px;
+}
+.weather .info p{
+    font-size: 12px;
 }
 
 .taskbar {
