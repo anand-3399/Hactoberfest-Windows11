@@ -34,16 +34,17 @@
 
     <div class="taskbar">
         <div class="weather">
-          <img src="img/icons/cloudyDay.svg" alt="" class="icon">
-          <div class="info">
-            <p>16°C</p>
-            <p>Parc. soleado</p>
-          </div>
+            <img src="img/icons/cloudyDay.svg" alt="" class="icon">
+            <div class="info">
+                <p>16°C</p>
+                <p>Parc. soleado</p>
+            </div>
         </div>
 
-        <img id="Menu" src="img/icons/startButton.png" alt="">
-        <img id="SearchIcon" src="img/icons/search-icon.svg" alt="">
-        <img id="TaskView" src="img\icons\taskView.svg" alt="">
+        <img id="Menu" src="img/icons/startButton.png" alt="Start Menu">
+        <img id="SearchIcon" src="img/icons/search-icon.svg" alt="Search">
+        <img id="TaskView" src="img\icons\taskView.svg" alt="TaskView">
+        <img id="Widgets" src="img\icons\widgets.svg" alt="Widgets">
 
         <div class="rightTaskbar">
             <img src="img\icons\up.svg" alt="" onclick="Fullscreen()" title="CLICK HERE FOR FULL SCREEN">
@@ -68,6 +69,7 @@
             </div>
         </div>
     </div>
+
     <div class="startMenuPlace">
         <div class="startmenu">
             <div class="search">
@@ -309,6 +311,73 @@
         </div>
 
     </div>
+
+
+    <div class="widgetMenu">
+        <div class="time">
+            <div class="timedate_Of_Widgets">
+                <a class="hours">00</a>:
+                <a class="minutes">00 </a>&nbsp;
+                <a class="am_pm">AM </a>
+            </div>
+        </div>
+
+        <div class="WidgetsPlace">
+
+            <div class="AllWidget Wheather">
+                <div class="topMenuWidget">
+                    <img src="img/icons/cloudyDay.svg" alt="">
+                    <span class="MainApp">Wheather</span>
+
+                    <img src="img\icons\more-info.png" class="moreInfo"></img>
+                </div>
+
+                <div class="MainContentWindow">
+                    <img src="img\icons\sun-icon.png" alt="">
+
+                    <div class="leftPart">
+                        <div class="Part1">
+                            <img src="img\icons\home.png" alt="">
+                            <p>Parc. soleado, US</p>
+
+                        </div>
+                        <div class="Part2">
+                            <span>16°C</span>
+                            <p>Strong UV Today</p>
+                        </div>
+                        <div class="Part3">
+                            See Full Forecast
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="AllWidget MicrosoftEdge">
+                <div class="topMenuWidget">
+                    <img src="img\icons\edge.svg" alt="">
+                    <span class="MainApp">Microsoft Edge</span>
+
+                    <img src="img\icons\more-info.png" class="moreInfo"></img>
+                </div>
+
+                <div class="MainContentWindow">
+                    <div class="search">
+                        <div class="SearchIcon"></div>
+                        <input type="text" class="SearchInput" id="myInput1" onkeyup="" placeholder="Search on Web.."
+                            title="Search on Web">
+                    </div>
+                    <p>
+                        <img src="img\icons\location-pin.png" alt=""> Parc. soleado, US
+                    </p>
+                </div>
+            </div>
+            <div class="AllWidget"></div>
+            <div class="AllWidget"></div>
+            <div class="AllWidget"></div>
+            <div class="AllWidget"></div>
+        </div>
+    </div>
+
 
 
 

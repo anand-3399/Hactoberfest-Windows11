@@ -12,22 +12,25 @@ body {
     font-size: 14px;
 }
 
-.weather{
+.weather {
     position: absolute;
     left: 15px;
     display: flex;
     justify-content: flex-start;
     padding-right: 15px;
 }
+
 .weather:hover {
     transition: all 0.1s ease-in;
     background-color: #d1d1d1;
     border-radius: 8px;
 }
-.weather .info{
+
+.weather .info {
     padding-top: 3px;
 }
-.weather .info p{
+
+.weather .info p {
     font-size: 12px;
 }
 
@@ -384,4 +387,171 @@ figure {
     bottom: -121px;
     min-width: 100%;
     min-height: 100%;
+}
+
+/* Widgets */
+.widgetMenu {
+    left: -1000px;
+    transition: all 0.5s ease-in;
+    height: calc(100% - 90px);
+    width: 50%;
+    margin-left: 40px;
+    position: absolute;
+    bottom: 50px;
+    z-index: 90;
+    background-color: #f2f2f2;
+    border: 2px solid #f2f2f2;
+    margin-bottom: 4px;
+    border-radius: 7px;
+
+}
+
+.timedate_Of_Widgets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+.AllWidget {
+    height: max-content;
+    width: calc(95% - 20px);
+    background-color: red;
+    margin-left: 8px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.WidgetsPlace {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.topMenuWidget {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.MainApp {
+    margin-left: -10rem;
+}
+
+.topMenuWidget img {
+    width: 13px;
+    margin-left: 8px;
+}
+
+.AllWidget .topMenuWidget .moreInfo {
+    margin: 7px;
+    margin-top: 1px;
+}
+
+.Wheather {
+    background: linear-gradient(177deg, #f1e6e6, #d6d62a);
+}
+
+.topMenuWidget {
+    color: black;
+    margin-top: 0.4rem;
+}
+
+.Wheather .MainContentWindow img {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 0.2rem;
+    margin-top: 0.7rem;
+}
+
+.Wheather .MainContentWindow {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.Wheather .leftPart {
+    width: -webkit-fill-available;
+}
+
+.Wheather .leftPart .Part1,
+.Wheather .leftPart .Part2 {
+    display: flex;
+    margin-top: 0.4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.Wheather .leftPart .Part1 img {
+    width: 0.8rem;
+    margin: 0;
+    height: 0.8rem;
+}
+
+.Wheather .leftPart .Part1 p,
+.Wheather .leftPart .Part2 span,
+.Wheather .leftPart .Part2 p {
+    font-weight: 500;
+    margin-left: 0.2rem;
+
+}
+
+.Wheather .leftPart .Part2 span {
+    font-size: 25px;
+}
+
+.Wheather .leftPart .Part2 p {
+    margin-left: 2rem;
+}
+
+.Wheather .leftPart .Part3 {
+    margin: 1rem;
+    text-align: center;
+    color: blue;
+    font-weight: 600;
+}
+
+.MicrosoftEdge {
+    background: url("./img/icons/WallpaperForEdgeWidget.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.MicrosoftEdge .MainApp {
+    margin-left: -8rem;
+    color: black;
+}
+
+.MicrosoftEdge .SearchInput {
+    width: auto;
+}
+
+.MicrosoftEdge .SearchIcon {
+    /* left: calc(98% - 249px);
+    top: calc(44% - 249px); */
+
+    position: relative;
+    height: 22px;
+    top: 0;
+}
+
+.MicrosoftEdge .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MicrosoftEdge .MainContentWindow p {
+    text-align: center;
+    color: black;
+    font-size: 21px;
+    font-weight: 400;
+    margin: 1.5rem;
+}
+
+.MicrosoftEdge .MainContentWindow p img {
+    width: 1rem;
 }

@@ -9,7 +9,7 @@ Menu.addEventListener("click", () => {
         startmenu.style.bottom = "50px"
         startmenu.style.transform = "translateX(0)"
         searchmenu.style.bottom = "-655px"
-
+        widgetMenu.style.left = "-1000px"
     }
 })
 
@@ -25,9 +25,28 @@ SearchIcon.addEventListener("click", () => {
         searchmenu.style.bottom = "50px"
         searchmenu.style.transform = "translateX(0)"
         startmenu.style.bottom = "-655px"
+        widgetMenu.style.left = "-1000px"
     }
 
 })
+
+Widgets = document.getElementById("Widgets")
+widgetMenu = document.getElementsByClassName("widgetMenu")[0]
+
+Widgets.addEventListener("click", () => {
+    if (widgetMenu.style.left == "0px") {
+        widgetMenu.style.left = "-1000px"
+        
+    }
+    else {
+        widgetMenu.style.left = "0px"
+        startmenu.style.bottom = "-655px"
+        searchmenu.style.bottom = "-655px"
+    }
+
+})
+
+
 
 
 // Setting Timings
@@ -78,7 +97,7 @@ function updateClock() {
 }
 
 updateClock();
-window.setInterval("updateClock()", 1);
+window.setInterval("updateClock()", 100);
 
 // END CLOCK SCRIPT
 // End
@@ -90,7 +109,9 @@ clickanywhere.addEventListener("click", () => {
     }
     else if (searchmenu.style.bottom == "50px") {
         searchmenu.style.bottom = "-655px"
-
+    }
+    else if(widgetMenu.style.left == "0px"){
+        widgetMenu.style.left = "-1000px"
     }
 
 })
@@ -163,5 +184,18 @@ function myFunction1() {
 
         }
     }
-
 }
+
+function GetTime() {
+    let h = document.getElementById('h').innerText;
+    let m = document.getElementById('m').innerText;
+    let mi = document.getElementById('mi').innerText;
+
+    document.getElementsByClassName('hours')[0].innerText = h;
+    document.getElementsByClassName('minutes')[0].innerText = m;
+    document.getElementsByClassName('am_pm')[0].innerText = mi;
+}
+
+window.setInterval("GetTime()", 100);
+
+
