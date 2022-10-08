@@ -394,8 +394,8 @@ figure {
     left: -1000px;
     transition: all 0.5s ease-in;
     height: calc(100% - 90px);
-    width: 50%;
-    margin-left: 40px;
+    width: 45%;
+    margin-left: 20px;
     position: absolute;
     bottom: 50px;
     z-index: 90;
@@ -417,9 +417,9 @@ figure {
 
 .AllWidget {
     height: max-content;
-    width: calc(95% - 20px);
+    /* width: calc(95% - 20px); */
     background-color: red;
-    margin-left: 8px;
+    /* margin-left: 8px; */
     border-radius: 8px;
     margin-top: 10px;
 }
@@ -427,7 +427,8 @@ figure {
 .WidgetsPlace {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* grid-template-rows: repeat(5, 1fr); */
+    margin: 0 34px;
+    grid-gap: 0 15px;
 }
 
 .topMenuWidget {
@@ -470,12 +471,12 @@ figure {
 .Wheather .MainContentWindow {
     display: flex;
     justify-content: center;
-    width: 80%;
-    margin-left: 10%;
+    /* width: 80%;
+    margin-left: 10%; */
 }
 
 .Wheather .leftPart {
-    width: -webkit-fill-available;
+    /* width: -webkit-fill-available; */
 }
 
 .Wheather .leftPart .Part1,
@@ -505,7 +506,7 @@ figure {
 }
 
 .Wheather .leftPart .Part2 p {
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 .Wheather .leftPart .Part3 {
@@ -548,7 +549,7 @@ figure {
 
 .MicrosoftEdge .MainContentWindow p {
     text-align: center;
-    color: black;
+    color: white;
     font-size: 21px;
     font-weight: 400;
     margin: 1.5rem;
@@ -556,11 +557,12 @@ figure {
 
 .MicrosoftEdge .MainContentWindow p img {
     width: 1rem;
+    filter: invert(1);
 }
 
 .MicrosoftOneDrive {
     background-color: #eae9e9;
-    margin-top: calc(5% - 29px);
+    margin-top: calc(5% - 25px);
 }
 
 .MicrosoftOneDrive .MainApp {
