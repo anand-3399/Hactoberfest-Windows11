@@ -1,6 +1,6 @@
 Menu = document.getElementById("Menu")
 startmenu = document.getElementsByClassName("startmenu")[0]
- 
+
 Menu.addEventListener("click", () => {
     if (startmenu.style.bottom == "50px") {
         startmenu.style.bottom = "-655px"
