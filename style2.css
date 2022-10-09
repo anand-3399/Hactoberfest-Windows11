@@ -85,7 +85,7 @@ body {
 
 /* START MENU BAR NOW */
 .startmenu {
-    bottom: -655px;
+    /*bottom: -655px;*/
     transition: all 0.5s ease-in;
 
     height: 500px;
@@ -98,7 +98,7 @@ body {
     border: 2px solid #f2f2f2;
     margin-bottom: 4px;
     border-radius: 7px;
-    transform: translateY(660px);
+    /*transform: translateY(660px);*/
 
 }
 
@@ -144,7 +144,7 @@ body {
     width: 15px;
 }
 
-.pinned .start-icons {
+.icons-list {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -155,20 +155,23 @@ body {
 }
 
 figure {
-    text-align: center;
+    text-align: right;
     font: status-bar;
     width: 72.9px;
     cursor: pointer;
-    margin: 0px 0px 5px 0px;
+    margin: 0px 0px 10px 0px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+} 
+.scroll-div{
+    height: 340px;
+    overflow: scroll;
+    overflow-y: scroll;
+    outline-offset: 0;
+    scroll-snap-align: end;
 }
-.figcaption{
-    text-align: right;
-}
-
 .center img,
 .start-icons img {
     display: inline-block;

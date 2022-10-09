@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Windows 11 Clone</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <link rel="shortcut icon" href="img/icons/favicon.png" sizes="152x152">
 </head>
 
@@ -85,114 +85,120 @@
             <div class="pinned">
 
                 <div class="start-top-elements">
-                    <span>Pinned</span>
-                    <button class="openAll" id="allapps"><a href="allapps.html" class="nav-link"> <img src="img/icons/right.svg" alt="open all apps"
-                            class="smallRight">All apps</button></a>
+                    <span>All apps</span>
+                    <button class="openAll" id="Back"><a href="index.html"class="nav-link"><img src="img/icons/left.svg" alt="open all apps"
+                            class="smallRight">Back</button></a> 
+                            
                 </div>
-
-                <div class="start-icons" id="myICONS">
-
-                    <figure id="startWord">
-                        <a href="https://office.live.com/start/word.aspx">
-                        <img src="img/icons/word.svg" alt="MS Word icon">
-                    </a>
-                        <figcaption>Word</figcaption>
-                    </figure>
-                    <figure id="startEdge">
+                <div class="scroll-bg">
+                    <div class="scroll-div">
+                        <div class="scroll-object">
+                <p style="margin-left:2.5em;" font sizes="30"><strong>A</strong></p>
+                <div class="icon-list" id="icon-list">
+                    
+                    <figure id="startAccess">
                         
-                        <img src="img/icons/edge.svg" alt="Windows 11 Edge icon">
+                        <img src="img/icons/acess.svg" alt="Windows 11 Access icon" width="500"height="40"style="margin-left:2.5em;">
                         
-                        <figcaption>Edge</figcaption>
+                        <figcaption>Access</figcaption>
+                      
                     </figure>
-                    <figure id="startPowerPoint">
-                        <a href="https://office.live.com/start/powerpoint.aspx">
-                        <img src="img/icons/powerPoint.svg" alt="PowerPoint icon">
-                    </a>
-                        <figcaption>PowerPoint</figcaption>
+                    <p style="margin-left:2.5em;" font sizes="30"><strong>B</strong></p>
+                    <figure id="startBrave">
+                        
+                        <img src="img/icons/brave.svg" alt="Windows 11 brave icon" width="500"height="40"style="margin-left:2.5em;">
+                        
+                        <figcaption>Brave</figcaption>
                     </figure>
-                    <figure id="startExcel" onclick="executeProgram('excel')">
-                        <a href="https://office.live.com/start/excel.aspx">
-                        <img src="img/icons/excel.svg" alt="MS Excel icon">
-                    </a>
-                        <figcaption>Excel</figcaption>
-                    </figure>
-                    <figure id="startMail">
-                        <img src="img/icons/mail.svg" alt="Windows Mail icon">
-                        <figcaption>Mail</figcaption>
-                    </figure>
-                    <figure id="startStore">
-                        <img src="img/icons/store.png" alt="Windows 11 Microsoft Store icon">
-                        <figcaption>MS Store</figcaption>
-                    </figure>
-                    <figure id="startPhotos">
-                        <img src="img/icons/photos.svg" alt="Windows Photos icon">
-                        <figcaption>Photos</figcaption>
-                    </figure>
-                    <figure id="startCalendar">
-                        <img src="img/icons/calender.svg" alt="Windows Calender icon">
-                        <figcaption>Calender</figcaption>
-                    </figure>
-                    <figure id="startOneNote">
-                        <a href="https://www.onenote.com/notebooks">
-                        <img src="img/icons/oneNote.svg" alt="OneNote icon">
-                    </a>
-                        <figcaption>OneNote</figcaption>
-                    </figure>
-                    <figure id="startYourPhone">
-                        <img src="img/icons/yourPhone.svg" alt="Windows Your Phone icon">
-                        <figcaption>Your Phone</figcaption>
-                    </figure>
-                    <figure id="startClock">
-                        <img src="img/icons/clock.svg" alt="Windows Clock icon">
-                        <figcaption>Clock</figcaption>
-                    </figure>
-                    <figure id="startLinkedIn">
-                        <a href="https://www.linkedin.com/">
-                        <img src="img/icons/linkedIn.svg" alt="LinkedIn icon">
-                        </a>
-                        <figcaption>LinkedIn</figcaption>
-                    </figure>
-                    <figure id="startToDo">
-                        <img src="img/icons/toDo.svg" alt="Microsoft To DO icon">
-                        <figcaption>To Do</figcaption>
-                    </figure>
-                    <figure id="startSettings" onclick="executeProgram('settings')">
-                        <img src="img/icons/settings.svg" alt="Windows 11 Settings icon">
-                        <figcaption>Settings</figcaption>
-                    </figure>
-                    <figure id="startCalci">
-                        <img src="img/icons/calculator.svg" alt="Windows Calculator icon">
+                    <p style="margin-left:2.5em;" font sizes="30"><strong>C</strong></p>
+                    <figure id="startCalculator">
+                        
+                        <img src="img/icons/calculator.svg" alt="Windows 11 Calculator icon" width="500"height="40"style="margin-left:2.5em;">
+                        
                         <figcaption>Calculator</figcaption>
                     </figure>
-                    <figure id="startWhiteboard">
-                        <img src="img/icons/whiteboard.png" alt="Windows Whiteboard icon">
-                        <figcaption>Whiteboard</figcaption>
+                    <figure id="startCalender">
+                        
+                        <img src="img/icons/calender.svg" alt="Windows 11 Calander icon" width="500"height="40"style="margin-left:2.5em;">
+                        
+                        <figcaption>Calander</figcaption>
                     </figure>
-                    <figure id="startSnip">
-                        <img src="img/icons/snipSketch.svg" alt="Windows Snipping Tool icon">
-                        <figcaption>Snipping Tool</figcaption>
+                    <figure id="startCamera">
+                        
+                        <img src="img/icons/cam.svg" alt="Windows 11 Camera icon" width="500"height="40"style="margin-left:2.5em;">
+                        
+                        <figcaption>Camera</figcaption>
                     </figure>
-                    <figure id="startMovies">
-                        <img src="img/icons/movies.svg" alt="Windows Movies &amp; TV icon">
-                        <figcaption>Movies &amp; TV</figcaption>
+                    <figure id="startClock">
+                        
+                        <img src="img/icons/clock.svg" alt="Windows 11 Clock icon" width="500"height="40"style="margin-left:2.5em;">
+                        
+                        <figcaption>Clock</figcaption>
                     </figure>
 
+
+                    <p style="margin-left:2.5em;" font sizes="30"><strong>E</strong></p>
+                    <figure id="startEdge">
+                        
+                        <img src="img/icons/edge.svg" alt="Windows 11 Edge icon" width="500"height="40"style="margin-left:2.5em;">
+                        
+                        <figcaption>Edge</figcaption>
+                      
+                    </figure>
+                    <p style="margin-left:2.5em;" font sizes="30"><strong>G</strong></p>
+                    <figure id="startChrome">
+                        
+                        <img src="img/icons/chrome.svg" alt="Windows 11 Chrome icon" width="500"height="40"style="margin-left:2.5em;">
+                        
+                        <figcaption>Google Chrome</figcaption>
+                    </figure>
+                        <p style="margin-left:2.5em;" font sizes="30"><strong>M</strong></p>
+                        <figure id="startMAIL">
+                        
+                            <img src="img/icons/mail.svg" alt="Windows 11 Mail icon" width="500"height="40"style="margin-left:2.5em;">
+                            
+                            <figcaption>Mail</figcaption>
+                        </figure>
+                        <figure id="startMicrosoftstore">
+                        
+                            <img src="img/icons/store.png" alt="Windows 11 store icon" width="500"height="40"style="margin-left:2.5em;">
+                            
+                            <figcaption>Microsoft Store</figcaption>
+                        </figure>
+                        <figure id="startMOVIES">
+                        
+                            <img src="img/icons/movies.svg" alt="Windows 11 MOVIES icon" width="500"height="40"style="margin-left:2.5em;">
+                            
+                            <figcaption>MOVIES</figcaption>
+                        </figure>
+                        <p style="margin-left:2.5em;" font sizes="30"><strong>S</strong></p>
+                        <figure id="startSettings">
+                        
+                            <img src="img/icons/settings.svg" alt="Windows 11 Settings icon" width="500"height="40"style="margin-left:2.5em;">
+                            
+                            <figcaption>Settings</figcaption>
+                        </figure>
+
+                
+                </div></div></div>
+                
+                </div>
+                    
+                   
+                
+                <div class="profile">
+                    <div class="user">
+                        <img src="img/icons/user.png" alt="Windows 11 User icon">
+                        <span>Anand Jaiswar</span>
+                    </div>
+                    <img src="img/icons/shutdown.svg" alt="Windows 11 Shutdown icon" id="shutdown">
+                </div>
+
+            </div>
+            
                 </div>
             </div>
-            <div class="recommended">
-                <div class="start-top-elements">
-                    <span>Recommended</span>
-                    <button class="openAll" id="allapps">More <img src="img/icons/right.svg" alt="open all apps"
-                            class="smallRight"></button>
-                </div>
-            </div>
-            <div class="profile">
-                <div class="user">
-                    <img src="img/icons/user.png" alt="Windows 11 User icon">
-                    <span>Anand Jaiswar</span>
-                </div>
-                <img src="img/icons/shutdown.svg" alt="Windows 11 Shutdown icon" id="shutdown">
-            </div>
+            
 
         </div>
     </div>
@@ -432,6 +438,6 @@
 
 
 </body>
-<script src="script.js"></script>
+<script src="script2.js"></script>
 
 </html>
