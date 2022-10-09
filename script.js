@@ -9,7 +9,7 @@ Menu.addEventListener("click", () => {
         startmenu.style.bottom = "50px"
         startmenu.style.transform = "translateX(0)"
         searchmenu.style.bottom = "-655px"
-        widgetMenu.style.left = "-1000px"
+        widgetMenu.style.left = "-50%"
     }
 })
 
@@ -25,7 +25,7 @@ SearchIcon.addEventListener("click", () => {
         searchmenu.style.bottom = "50px"
         searchmenu.style.transform = "translateX(0)"
         startmenu.style.bottom = "-655px"
-        widgetMenu.style.left = "-1000px"
+        widgetMenu.style.left = "-50%"
     }
 
 })
@@ -35,7 +35,7 @@ widgetMenu = document.getElementsByClassName("widgetMenu")[0]
 
 Widgets.addEventListener("click", () => {
     if (widgetMenu.style.left == "0px") {
-        widgetMenu.style.left = "-1000px"
+        widgetMenu.style.left = "-50%"
         
     }
     else {
@@ -111,7 +111,7 @@ clickanywhere.addEventListener("click", () => {
         searchmenu.style.bottom = "-655px"
     }
     else if(widgetMenu.style.left == "0px"){
-        widgetMenu.style.left = "-1000px"
+        widgetMenu.style.left = "-50%"
     }
 
 })
