@@ -9,7 +9,8 @@ Menu.addEventListener("click", () => {
         startmenu.style.bottom = "50px"
         startmenu.style.transform = "translateX(0)"
         searchmenu.style.bottom = "-655px"
-        widgetMenu.style.left = "-50%"
+        // widgetMenu.style.left = "-50%"
+        // widgetMenu.style.display = "none"
     }
 })
 
@@ -35,7 +36,7 @@ widgetMenu = document.getElementsByClassName("widgetMenu")[0]
 
 Widgets.addEventListener("click", () => {
     if (widgetMenu.style.left == "0px") {
-        widgetMenu.style.left = "-50%"
+        widgetMenu.style.left = "-70em"
         
     }
     else {
