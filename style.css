@@ -438,7 +438,7 @@ figure {
 .AllWidget {
     /* height: max-content; */
     /* width: calc(95% - 20px); */
-    background-color: red;
+    /* background-color: red; */
     /* margin-left: 8px; */
     border-radius: 8px;
     margin-top: 10px;
