@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;    
 }
 
 body {
@@ -373,6 +374,7 @@ figure {
 
 #timedate {
     padding: 5px;
+    text-align: right;
 }
 
 /* End */
@@ -606,4 +608,135 @@ figure {
 .MicrosoftOneDrive .Images div span {
     display: flex;
     flex-direction: column;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+#DateTime{
+    cursor: context-menu;
+    font-size: 12px;
+}
+
+#DateTime:hover{
+    transition: all 0.1s ease-in;
+    background-color: #d1d1d1;
+    border-radius: 8px;
+}
+
+.container-date-time {
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  margin: 10px;
+  z-index: 1;
+  position: fixed;
+  z-index: 1;
+  bottom: 50px;
+  right: -500px;
+  overflow-x: hidden;
+  transition: all 0.5s ease-in;
+  cursor: context-menu;  
+}
+
+.notification{
+  width: 258px;
+  border-radius: 8px;
+  background-color: rgb(240, 243, 250, .8);
+  backdrop-filter: blur(20px);
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.notification h1{
+  font-size: 13px;
+  padding: 15px 10px;
+  background-color: rgb(227, 239, 255, .8);
+  backdrop-filter: blur(20px);
+  border-radius: 8px 8px 0px 0px;
+}
+
+.week-month-date{
+  width: 258px;
+  border-radius: 8px 8px 0px 0px;
+  font-size: 12px;
+  background-color: rgb(227, 239, 255, .8);
+  backdrop-filter: blur(20px);
+  padding: 15px 10px;
+  font-weight: 600;
+}
+
+.calendar {
+  width: 258px;
+  border-radius: 0px 0px 8px 8px;
+  padding: 5px;
+  background-color: rgb(240, 243, 250, .8);
+  backdrop-filter: blur(20px);
+}
+
+.month {
+  width: 100%;
+  padding: 7px 3px;
+  margin: 2px;
+}
+
+.month .prev-next{
+  display: inline-block;
+  width: 25%;
+  font-size: 14px;
+  text-align: right;  
+}
+
+.month .prev-next i{
+    padding: 0px 5px;
+    background-color: rgb(227, 239, 255, .8);
+}
+
+.month h1 {
+  display: inline-block;
+  width: 70%;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 2px;
+}
+
+.weekdays, .days {
+  width: 100%;
+  display: flex;
+}
+
+.weekdays {
+  align-items: center;
+}
+
+.days {
+  flex-wrap: wrap;
+}
+
+.weekdays div, .days div {
+  font-size: 12px;
+  width: calc(220px / 7);
+  display: flex;
+  justify-content: center;
+  padding: 9px 3px;
+  margin: 2px;
+}
+
+.weekdays div {
+  font-weight: bold;
+}
+
+.days div:hover:not(.today) {
+  background-color: rgba(192, 192, 192, .6);
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.today {
+  background-color: rgb(0, 122, 255);
+  border-radius: 50%;
+  color: #fff;
 }

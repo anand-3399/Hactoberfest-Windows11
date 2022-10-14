@@ -10,6 +10,7 @@ Menu.addEventListener("click", () => {
         startmenu.style.transform = "translateX(0)"
         searchmenu.style.bottom = "-655px"
         widgetMenu.style.left = "-50%"
+        DateTimeMenu.style.right = "-500px"
     }
 })
 
@@ -26,6 +27,7 @@ SearchIcon.addEventListener("click", () => {
         searchmenu.style.transform = "translateX(0)"
         startmenu.style.bottom = "-655px"
         widgetMenu.style.left = "-50%"
+        DateTimeMenu.style.right = "-500px"
     }
 
 })
@@ -42,6 +44,7 @@ Widgets.addEventListener("click", () => {
         widgetMenu.style.left = "0px"
         startmenu.style.bottom = "-655px"
         searchmenu.style.bottom = "-655px"
+        DateTimeMenu.style.right = "-500px"
     }
 
 })
@@ -67,18 +70,18 @@ function updateClock() {
         yr = now.getFullYear(),
         ampm = "AM";
     var months = [
-        "January",
-        "February",
-        "March",
-        "April",
-        "May",
-        "June",
-        "July",
-        "August",
-        "September",
-        "October",
-        "November",
-        "December"
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12"
     ];
 
     if (hou >= 12) {
@@ -90,8 +93,8 @@ function updateClock() {
         hou = 12;
         ampm = "AM";
     }
-    var tags = ["mon", "d", "y", "h", "m", "s", "mi"],
-        corr = [months[mo], dy, yr, hou.pad(2), min.pad(2), sec.pad(2), ampm];
+    var tags = ["mon", "d", "y", "h", "m", "mi"],
+        corr = [months[mo], dy, yr, hou.pad(2), min.pad(2), ampm];
     for (var i = 0; i < tags.length; i++)
         document.getElementById(tags[i]).firstChild.nodeValue = corr[i];
 }
@@ -101,6 +104,24 @@ window.setInterval("updateClock()", 100);
 
 // END CLOCK SCRIPT
 // End
+
+DateTime = document.getElementById("DateTime")
+DateTimeMenu = document.getElementById("DateTimeMenu")
+
+DateTime.addEventListener("click", () => {
+    if (DateTimeMenu.style.right == "0px") {
+        DateTimeMenu.style.right = "-500px"
+        console.log("close")
+    }
+    else {
+        DateTimeMenu.style.right = "0px"
+        startmenu.style.bottom = "-655px"
+        searchmenu.style.bottom = "-655px"
+        widgetMenu.style.left = "-50%"
+        console.log("open")
+    }
+})
+
 
 clickanywhere = document.getElementById("myVideo")
 clickanywhere.addEventListener("click", () => {
@@ -113,8 +134,12 @@ clickanywhere.addEventListener("click", () => {
     else if(widgetMenu.style.left == "0px"){
         widgetMenu.style.left = "-50%"
     }
+    else if(DateTimeMenu.style.right == "0px"){
+        DateTimeMenu.style.right = "-500px"
+    }
 
 })
+
 
 /* Get the element you want displayed in fullscreen mode (a video in this example): */
 var elem = document.documentElement;
@@ -198,4 +223,92 @@ function GetTime() {
 
 window.setInterval("GetTime()", 100);
 
+//DateTimeMenu Container Box
+function DateTimeMenuFunction() {
+    const date = new Date();
 
+    const renderCalendar = () => {
+      date.setDate(1);
+    
+      const monthDays = document.querySelector(".days");
+    
+      const lastDay = new Date(
+        date.getFullYear(),
+        date.getMonth() + 1,
+        0
+      ).getDate();
+    
+      const prevLastDay = new Date(
+        date.getFullYear(),
+        date.getMonth(),
+        0
+      ).getDate();
+    
+      const firstDayIndex = date.getDay();
+    
+      const lastDayIndex = new Date(
+        date.getFullYear(),
+        date.getMonth() + 1,
+        0
+      ).getDay();
+    
+      const nextDays = 7 - lastDayIndex - 1;
+    
+      const months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ];
+      
+      const Weeks = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+      
+      document.querySelector(".date h1").innerHTML = months[date.getMonth()]+" "+date.getFullYear();
+      
+      document.querySelector(".week-month-date").innerHTML = Weeks[new Date().getDay()]+", "+months[new Date().getMonth()]+" "+new Date().getDate();
+    
+      let days = "";
+    
+      for (let x = firstDayIndex; x > 0; x--) {
+        days += `<div class="prev-date">${prevLastDay - x + 1}</div>`;
+      }
+    
+      for (let i = 1; i <= lastDay; i++) {
+        if (
+          i === new Date().getDate() &&
+          date.getMonth() === new Date().getMonth()
+        ) {
+          days += `<div class="today">${i}</div>`;
+        } else {
+          days += `<div>${i}</div>`;
+        }
+      }
+    
+      for (let j = 1; j <= nextDays; j++) {
+        days += `<div class="next-date">${j}</div>`;
+        monthDays.innerHTML = days;
+      }
+    };
+    
+    document.querySelector(".prev").addEventListener("click", () => {
+      date.setMonth(date.getMonth() - 1);
+      renderCalendar();
+    });
+    
+    document.querySelector(".next").addEventListener("click", () => {
+      date.setMonth(date.getMonth() + 1);
+      renderCalendar();
+    });
+    
+    renderCalendar();    
+}
+
+DateTimeMenuFunction();
