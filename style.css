@@ -216,11 +216,11 @@ figure {
     background: url(img/icons/search.svg) no-repeat;
     content: "";
     position: absolute;
-    left: 33px;
-    top: 33px;
+    left: 48px;
+    top: 35px;
     opacity: 0.7;
     bottom: 0;
-    width: 22px;
+    width: 19px;
 }
 
 .search {
@@ -542,6 +542,7 @@ figure {
     height: 16px;
     top: 0;
     width: 15px;
+    left: 31px;
 }
 
 .MicrosoftEdge .search {
