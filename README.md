@@ -11,7 +11,11 @@ Now Users can Search the Applications directly from the Search Bar. They have tw
 * First is that they can Directly Search from the Start Menu. (Search Bar Enabled)
 * Second is through Search Icon also the apps can be searched. (Search Bar Enabled)
 
-https://user-images.githubusercontent.com/85798085/181325601-7e3aca8f-c264-4d19-8b3a-284651c0a468.mp4
+
+
+https://user-images.githubusercontent.com/85798085/195973038-dea780d4-2d8b-4c64-8cc2-99701ce2a0e5.mp4
+
+
 
 
 
