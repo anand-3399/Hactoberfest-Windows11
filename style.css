@@ -6,6 +6,7 @@
 
 body {
     /* background-image: url("img/bg.jpeg"); */
+    background-image: radial-gradient(circle,rgba(4,189,228,.1) -25%, rgba(2,83,185,.5));
     background-size: cover;
     overflow: hidden;
     height: 100vh;
@@ -23,7 +24,7 @@ body {
 
 .weather:hover {
     transition: all 0.1s ease-in;
-    background-color: #d1d1d1;
+    background-color: #fff;
     border-radius: 8px;
 }
 
@@ -41,7 +42,8 @@ body {
     bottom: 0;
     display: flex;
     justify-content: center;
-    background-color: #f3f3f3;
+    background-color: rgb(240, 243, 250, .8);
+    backdrop-filter: blur(20px);
     z-index: 110;
     align-items: center;
     height: 50px;
@@ -55,12 +57,12 @@ body {
 
 .taskbar img:hover {
     transition: all 0.2s ease-in;
-    background-color: #d1d1d1;
+    background-color: #fff;
     border-radius: 8px;
 }
 
 .taskbar img:active {
-    background-color: #b8b8b8;
+    background-color: #fff;
     transform: scale(0.9, 0.9);
 }
 
@@ -96,8 +98,9 @@ body {
     position: absolute;
     bottom: 50px;
     z-index: 90;
-    background-color: #f2f2f2;
-    border: 2px solid #f2f2f2;
+    background-color: rgb(240, 243, 250, .8);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgb(240, 243, 250, .8);
     margin-bottom: 4px;
     border-radius: 7px;
     transform: translateY(660px);
@@ -126,7 +129,7 @@ body {
 }
 
 .start-icons figure:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255);
     border-radius: 5px;
 }
 
@@ -182,13 +185,14 @@ figure {
 .profile {
     position: absolute;
     padding: 9px 41px;
-    width: 450px;
+    width: 100%;
     bottom: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(255 255 255 / 20%);
-    border-top: 1.5px solid grey;
+    background-color: rgb(227, 239, 255, .8);
+    backdrop-filter: blur(20px);
+    border-top: 1.5px solid rgb(227, 239, 255, .8);
 }
 
 .user {
@@ -248,8 +252,9 @@ figure {
     position: absolute;
     bottom: 50px;
     z-index: 90;
-    background-color: #f2f2f2;
-    border: 2px solid #f2f2f2;
+    background-color: rgb(240, 243, 250, .8);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgb(240, 243, 250, .8);
     margin-bottom: 4px;
     border-radius: 7px;
     transform: translateY(660px);
@@ -318,7 +323,7 @@ figure {
 
 #DefaultDisplaySearch:hover,
 #SearchedTemp:hover {
-    background-color: #dedede;
+    background-color: #ececec;
 
 }
 
@@ -355,14 +360,14 @@ figure {
 }
 
 #Recent-Searches:hover {
-    background-color: #dedede;
+    background-color: #ececec;
 }
 
 /* END */
 
 .action-center-button:hover {
     transition: all 0.1s ease-in;
-    background-color: #d1d1d1;
+    background-color: #fff;
     border-radius: 8px;
 }
 
@@ -381,14 +386,15 @@ figure {
 /* End */
 /* Video */
 #myVideo {
-    width: 100%;
+    width: 90%;
     justify-content: center;
     display: flex;
     align-items: center;
     position: fixed;
-    right: 0;
-    bottom: -121px;
-    min-width: 100%;
+    right: -50%;
+    transform: translateX(-60%);
+    bottom: -100px;
+    min-width: 90%;
     min-height: 100%;
 }
 
@@ -402,8 +408,9 @@ figure {
     position: absolute;
     bottom: 50px;
     z-index: 90;
-    background-color: #f2f2f2c2;
-    border: 2px solid #f2f2f2;
+    background-color: rgb(240, 243, 250, .8);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgb(240, 243, 250, .8);
     margin-bottom: 4px;
     border-radius: 7px;
     backdrop-filter: blur(4px);
@@ -623,7 +630,7 @@ figure {
 
 #DateTime:hover {
     transition: all 0.1s ease-in;
-    background-color: #d1d1d1;
+    background-color: #fff;
     border-radius: 8px;
 }
 
